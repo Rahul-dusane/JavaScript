@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        .error { color: red; }
+        .success { color: green; }
+    </style>
+    <script src="p29.js"></script>
+</head>
+<body>
+
+    <h2>Form Validation</h2>
+    <form onsubmit="return validateForm();">
+        <label>Name:</label>
+        <input type="text" id="name">
+        <span id="nameError" class="error"></span>
+        <br><br>
+
+        <label>Age:</label>
+        <input type="text" id="age">
+        <span id="ageError" class="error"></span>
+        <br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <span id="genderError" class="error"></span>
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <h3 id="result"></h3>
+
+</body>
+</html>
+
+	
